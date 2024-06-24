@@ -1,0 +1,18 @@
+{{#> main}}
+  <link rel="stylesheet" href="/css/style.css">
+  <h1>Lista de Productos</h1>
+  <ul>
+    {{#each products}}
+      <li>
+        <div><span class="label">ID:</span> <span>{{this.id}}</span></div>
+        <div><span class="label">Title:</span> <span>{{this.title}}</span></div>
+        <div><span class="label">Description:</span> <span>{{this.description}}</span></div>
+        <div><span class="label">Code:</span> <span>{{this.code}}</span></div>
+        <div><span class="label">Price:</span> <span>{{this.price}}</span></div>
+        <div><span class="label">Status:</span> <span>{{this.status}}</span></div>
+        <div><span class="label">Stock:</span> <span>{{this.stock}}</span></div>
+        <div><span class="label">Category:</span> <span>{{this.category}}</span></div>
+      </li>
+    {{/each}}
+  </ul>
+{{/main}}
